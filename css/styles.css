@@ -1,0 +1,257 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #D9D9D9;
+	font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  background-image: linear-gradient(#F2B47E, #D7D9D9);
+    }
+
+img{
+  width:100%;/* 250px;*/
+  height:100%;/* 200px;*/
+}
+.container {
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  grid-template-rows: 0.7fr 0.7fr 0.7fr 0.7fr 0.7fr;
+  gap: 5px 4px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "head head head"
+    "Servicios Servicios Servicios"
+    "portfolio portfolio portfolio"
+    "sobreMi imprimibles imprimibles"
+    "footer footer footer";
+  justify-content: center; 
+  justify-items: center; 
+  align-items: center;
+  text-align: justify;
+}
+
+.head {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 210px 210px 300px 100px;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "logo logo redes"
+    "logo logo redes"
+    "imagen imagen imagen"
+    "nav nav nav";
+  grid-area: head;
+  justify-items: center;
+}
+
+.logo { grid-area: logo; }
+
+.redes { grid-area: redes; }
+
+.imagen { grid-area: imagen; }
+
+.nav{grid-area: nav ;}
+
+.Servicios {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px 1fr 1fr;
+  gap: 5px 5px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "titulo titulo titulo"
+    "branding disenoGrafico asesorias"
+    "ilustracion cursos fotografia";
+  grid-area: Servicios;
+  text-align: center;
+}
+
+.titulo{grid-area: titulo;}
+
+.branding { grid-area: branding; }
+
+.ilustracion { grid-area: ilustracion; }
+
+.disenoGrafico { grid-area: disenoGrafico; }
+
+.cursos { grid-area: cursos; }
+
+.asesorias { grid-area: asesorias; }
+
+.fotografia { grid-area: fotografia; }
+
+.footer { grid-area: footer; }
+
+.portfolio {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 5px 5px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "portfolio1 portfolio2 portfolio4"
+    "portfolio1 portfolio3 portfolio5";
+  grid-area: portfolio;
+}
+
+.portfolio1 {
+   grid-area: portfolio1;
+   }
+
+.portfolio2 { grid-area: portfolio2; }
+
+.portfolio3 { grid-area: portfolio3; }
+
+.portfolio4 { grid-area: portfolio4; }
+
+.portfolio5 { grid-area: portfolio5; }
+
+.sobreMi { 
+  grid-area: sobreMi;
+ }
+
+.imprimibles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 20px 1fr 1fr;
+  gap: 5px 5px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "txtImprimibles txtImprimibles txtImprimibles"
+    "imprimibles1 imprimibles2 imprimibles3"
+    "impribles4 imprimibles5 imprimibles6";
+  grid-area: imprimibles;
+}
+
+.imprimibles1 { grid-area: imprimibles1; }
+
+.imprimibles2 { grid-area: imprimibles2; }
+
+.imprimibles3 { grid-area: imprimibles3; }
+
+.impribles4 { grid-area: impribles4; }
+
+.imprimibles5 { grid-area: imprimibles5; }
+
+.imprimibles6 { grid-area: imprimibles6; }
+
+.txtImprimibles{
+  grid-area: txtImprimibles;
+  text-align: center;
+}
+
+.txtBranding{
+  position: center;
+  right: 100px;
+  background-color: #788676;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.txtIlustracion{
+  position: center;
+  right: 100px;
+  background-color: #788676;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.txtDisenoGrafico{
+  position: center;
+  right: 100px;
+  background-color: #788676;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.txtCursos{
+  position: center;
+  right: 100px;
+  background-color: #788676;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.txtAsesorias{
+  position: center;
+  right: 100px;
+  background-color: #788676;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.txtFotografia{
+  position: center;
+  right: 100px;
+  background-color: #788676;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/*Animaciones*/
+
+.branding:hover{
+  width: 80%;
+  height: 80%;
+  transform: translate(10px, 20px);
+}
+.ilustracion:hover{
+  width: 80%;
+  height: 80%;
+  transform: translate(10px, 20px);
+}
+.disenoGrafico:hover{
+  width: 80%;
+  height: 80%;
+  transform: translate(10px, 20px);
+}
+.cursos:hover{
+  width: 80%;
+  height: 80%;
+  transform: translate(10px, 20px);
+}
+.asesorias:hover{
+  width: 80%;
+  height: 80%;
+  transform: translate(10px, 20px);
+}
+.fotografia:hover{
+  width: 80%;
+  height: 80%;
+  transform: translate(10px, 20px);
+}
+
+.portfolio1:hover {
+  width: 80%;
+  height: 80%; 
+  transform: translate(10px, 20px);
+  }
+
+.portfolio2:hover {  
+  width: 80%;
+  height: 80%; 
+  transform: translate(10px, 20px);
+}
+
+.portfolio3:hover {
+  width: 80%;
+  height: 80%;
+  transform: translate(10px, 20px);
+ }
+
+.portfolio4:hover { 
+  width: 80%;
+  height: 80%;
+  transform: translate(10px, 20px);
+ }
+
+.portfolio5:hover { 
+  width: 80%;
+  height: 80%;
+  transform: translate(10px, 20px);
+ }
+
