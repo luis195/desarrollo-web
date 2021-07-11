@@ -3,9 +3,51 @@
 	padding: 0;
 }
 
-nav{
+
+
+h4{
   text-align: center;
+  
 }
+.logo { 
+  width: 100px;
+  height: 100px;
+}
+.redes{
+  width: 100px;
+  height: 100px;
+}
+
+.inicio{
+  height: min-content;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 0.5fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  align-items: stretch;
+  }
+  .logo { 
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: end; 
+  }
+  .redes { grid-area: 1 / 3 / 2 / 4; }
+  .navHeader { grid-area: 2 / 1 / 3 / 4;
+    text-align: center;
+  }
+
+  .primer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    .inicio { grid-area: 1 / 1 / 2 / 2; }
+
+
 
 body {
 	background: #D9D9D9;
@@ -14,9 +56,6 @@ body {
   background-image: linear-gradient(#F2B47E, #D7D9D9);
     }
 
-main{
-  text-align: center;
-}
 img{
   width: 100%;
   height: 100%;
@@ -24,118 +63,71 @@ img{
 
 
 
-.logo { grid-area: logo; }
 
-.redes { grid-area: redes; }
 
 .imagen { grid-area: imagen; }
 
 .nav{grid-area: nav ;}
 
-.Servicios {
+.servicios {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.5fr 1fr 1fr;
-  gap: 5px 5px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "titulo titulo titulo"
-    "branding disenoGrafico asesorias"
-    "ilustracion cursos fotografia";
-  text-align:center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.5fr repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
 }
 
-.titulo{grid-area: titulo;
+.branding { grid-area: 2 / 1 / 3 / 2; }
 
-}
+.ilustracion { grid-area: 3 / 1 / 4 / 2; }
 
-.branding { grid-area: branding; }
+.disenoGrafico { grid-area: 3 / 2 / 4 / 3; }
 
-.ilustracion { grid-area: ilustracion; }
+.fotografia { grid-area: 2 / 2 / 3 / 3; }
 
-.disenoGrafico { grid-area: disenoGrafico; }
+.asesoria { grid-area: 2 / 3 / 3 / 4; }
 
-.cursos { grid-area: cursos; }
+.creacionDeContenido { grid-area: 3 / 3 / 4 / 4; }
 
-.asesorias { grid-area: asesorias; }
-
-.fotografia { grid-area: fotografia; }
+.titulo{grid-area: 1 / 2 / 2 / 3;
+justify-self: end; }
 
 
 .portfolio {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.5fr 1fr 1fr;
-  gap: 5px 5px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "titulop titulop titulop"
-    "portfolio1 portfolio2 portfolio4"
-    "portfolio1 portfolio3 portfolio5";
-}
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  }
+  
+  .tituloPortfolio { grid-area: 1 / 1 / 2 / 4; }
+  .portfolio1 { grid-area: 2 / 1 / 4 / 2; }
+  .portfolio2 { grid-area: 2 / 2 / 3 / 3; }
+  .portfolio3 { grid-area: 3 / 2 / 4 / 3; }
+  .portfolio4 { grid-area: 2 / 3 / 3 / 4; }
+  .portfolio5 { grid-area: 3 / 3 / 4 / 4; }
 
-.tituloport{
-  grid-area: titulop;
-}
-.portfolio1 {
-   grid-area: portfolio1;
-   }
+  .despedida {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    }
+    
+    .sobreMiTitulo { grid-area: 1 / 1 / 2 / 3;
+      align-items: baseline; }
+    .sobreMi { grid-area: 2 / 1 / 4 / 3;}
+    .despedida2 { grid-area: 1 / 3 / 2 / 6; }
+    .imprimibles1 { grid-area: 2 / 3 / 3 / 4; }
+    .imprimibles2 { grid-area: 2 / 4 / 3 / 5; }
+    .imprimibles5 { grid-area: 2 / 5 / 3 / 6; }
+    .imprimibles3 { grid-area: 3 / 3 / 4 / 4; }
+    .imprimibles4 { grid-area: 3 / 4 / 4 / 5; }
+    .imprimibles6 { grid-area: 3 / 5 / 4 / 6; }
 
-.portfolio2 { grid-area: portfolio2; }
 
-.portfolio3 { grid-area: portfolio3; }
-
-.portfolio4 { grid-area: portfolio4; }
-
-.portfolio5 { grid-area: portfolio5; }
-
-.sobreMi { 
-  display:grid;
-  grid-template-rows: 0.2fr 1fr 1fr;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "titulo"
-    "yo"
-    "parrafo";
-  text-align: center;
-  width: 50%;
-  height: 40%;
- }
- .yo{
-   grid-area: yo;
- }
- .parrafo{
-   grid-area: parrafo;
- }
-
-.imprimibles {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 20px 1fr 1fr;
-  gap: 5px 5px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "txtImprimibles txtImprimibles txtImprimibles"
-    "imprimibles1 imprimibles2 imprimibles3"
-    "impribles4 imprimibles5 imprimibles6";
-}
-
-.imprimibles1 { grid-area: imprimibles1; }
-
-.imprimibles2 { grid-area: imprimibles2; }
-
-.imprimibles3 { grid-area: imprimibles3; }
-
-.impribles4 { grid-area: impribles4; }
-
-.imprimibles5 { grid-area: imprimibles5; }
-
-.imprimibles6 { grid-area: imprimibles6; }
-
-.txtImprimibles{
-  grid-area: txtImprimibles;
-  text-align: center;
-}
 
 .txtBranding{
   position: center;
