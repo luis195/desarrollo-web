@@ -2,137 +2,95 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="css\bootstrap.css">
-    <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet" href="sass/css/bootstrap.css">
+    <link rel="stylesheet" href="sass/scss/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 
-<body class="py-5">
+<body>
+    <div class="container">
+        <header>
+            <img src="imagenes/logo.jpeg" height="500" width="500"/>
+            <h1>Solcartor Design</h1>
+            <h2>solcartordesign.com</h2>
 
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="imagenes\logo.jpeg" alt="">
-            </div>
-            <div class="redes">
-                <img src="imagenes\socialMedia.jpg" alt="">
-            </div>
-        </div>
-        <nav class="navHeader">
-            <ul>
-                <a href="servicios.html">Servicios</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="sobreMi.html">Sobre Mi</a>
-                <a href="imprimibles.html">Imprimibles</a>
-                <a href="index.html">Inicio</a>
-            </ul>
-        </nav>
-    </header>
+        </header>
+    </div>
 
     <main>
-        <section>
-            <div class="primer">
-                <div class="inicio">
-                    <img src="imagenes\ilustracionInicial.jpg" alt="">
+        <div class="container">
+            <nav class="navbar navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        Sobre Mi
+                    </a>
+                    <a class="navbar-brand" href="#">
+                        Portfolio
+                    </a>
+                    <a class="navbar-brand" href="#">
+                        Servicios
+                    </a>
+                    <a class="navbar-brand" href="#">
+                        Redes Sociales
+                    </a>
                 </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="servicios">
-
-                <div class="branding">
-                    <img src="imagenes\branding.jpg" alt="">
-                </div>
-                <div class="ilustracion">
-                    <img src="imagenes\ilustracion.jpg" alt="">
-                </div>
-                <div class="disenoGrafico">
-                    <img src="imagenes\disenoGrafico.jpg" alt="">
-                </div>
-                <div class="fotografia">
-                    <img src="imagenes\fotografia.jpg" alt="">
-                </div>
-                <div class="asesoria">
-                    <img src="imagenes\asesoria.jpg" alt="">
-                </div>
-                <div class="creacionDeContenido">
-                    <img src="imagenes\creacionDeContenido.jpg" alt="">
-                </div>
-                <div class="titulo">
-                    <h2>servicios</h2>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="portfolio">
-                <div class="tituloPortfolio"> </div>
-                <div class="portfolio1">
-                    <img src="imagenes/portfolio1.jpg" alt="">
-                </div>
-                <div class="portfolio2">
-                    <img src="imagenes/portfolio2.jpg" alt="">
-                </div>
-                <div class="portfolio3">
-                    <img src="imagenes/portfolio3.jpg" alt="">
-                </div>
-                <div class="portfolio4">
-                    <img src="imagenes/portfolio4.jpg" alt="">
-                </div>
-                <div class="portfolio5">
-                    <img src="imagenes/portfolio5.jpg" alt="">
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="despedida">
-                <div class="sobreMiTitulo"> +
-                    <h4>Sobre Mi</h4>
-                </div>
-                <div class="sobreMi">
-                    <img src="imagenes\sobreMi.jpg" alt="">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto illo unde cum eius eveniet
-                        quod et ducimus odio doloremque. Reprehenderit mollitia eos maxime nesciunt sed tempora dicta
-                        laudantium culpa delectus.
-                    </p>
-                </div>
-                <div class="despedida2">
-                     <h4>Gracias por venir, no olvides tu regalo.</h4>
-                     <h4>Imprimibles</h4>
-                </div>
-                <div class="imprimibles1">
-                    <img src="imagenes\imprimibles1.jpg" alt="">    
-                </div>
-                <div class="imprimibles2">
-                    <img src="imagenes\imprimibles2.jpg" alt="">    
-                </div>
-                <div class="imprimibles5">
-                    <img src="imagenes\imprimibles3.jpg" alt="">    
-                </div>
-                <div class="imprimibles3">
-                    <img src="imagenes\imprimibles4.jpg" alt="">    
-                </div>
-                <div class="imprimibles4">
-                    <img src="imagenes\imprimibles5.jpg" alt="">     
-                </div>
-                <div class="imprimibles6">
-                    <img src="imagenes\imprimibles6.jpg" alt="">    
-                </div>
-            </div>
-        </section>
+            </nav>
+        </div>
     </main>
 
-    <footer>
-        <h4>Disfrutemos de un café</h4>
-        <h4>¡Conversemos!</h4>
-    </footer>
-
+    <section>
+        <div class="container">
+            <img src="imagenes/ilustracionInicial.jpg" height="200" width="800"/>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imagenes/asesoria.jpg" class="d-block w-100" alt="asesoria">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Asesoria</h5>
+                            <p>Te asesoramos para la creacion de tu imagen digital.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagenes/branding.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Branding</h5>
+                            <p>Creamos tu marca.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagenes/creacionDeContenido.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Creacion de Contenido.</h5>
+                            <p>Creamos contenido para tu empresa.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagenes/fotografia.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Fotografia.</h5>
+                            <p>Tomamos fotografias con calidad profesional.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
