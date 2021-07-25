@@ -8,11 +8,10 @@ nav{
 }
 
 body {
-	background: #D9D9D9;
-	font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  background-image: linear-gradient(#F2B47E, #D7D9D9);
-    }
+  background: #D9D9D9 linear-gradient(#F2B47E, #D7D9D9);
+}
 
 main{
   text-align: center;
@@ -49,17 +48,46 @@ img{
 
 }
 
-.branding { grid-area: branding; }
+.branding { grid-area: branding;
+  justify-self: center;
+  align-self: center;
+  width: 70%;
+  height: 50%; }
 
-.ilustracion { grid-area: ilustracion; }
+.ilustracion { grid-area: ilustracion;
 
-.disenoGrafico { grid-area: disenoGrafico; }
+  justify-self: center;
+  align-self: center;
+  width: 70%;
+  height: 50%;}
 
-.cursos { grid-area: cursos; }
+.disenoGrafico { grid-area: disenoGrafico;
 
-.asesorias { grid-area: asesorias; }
+  justify-self: center;
+  align-self: center;
+  width: 70%;
+  height: 50%;}
 
-.fotografia { grid-area: fotografia; }
+.cursos { grid-area: cursos;
+
+  justify-self: center;
+  align-self: center;
+  width: 70%;
+  height: 50%;}
+
+.asesorias { grid-area: asesorias;
+
+  justify-self: center;
+  align-self: center;
+  width: 70%;
+  height: 50%;}
+
+.fotografia { grid-area: fotografia;
+
+  justify-self: center;
+  align-self: center;
+  width: 70%;
+  height: 50%;}
 
 
 .portfolio {
@@ -81,13 +109,33 @@ img{
    grid-area: portfolio1;
    }
 
-.portfolio2 { grid-area: portfolio2; }
+.portfolio2 { grid-area: portfolio2;
+  justify-self: center;
+  align-self: center;
+  width: 70%;
+  height: 50%;
+}
 
-.portfolio3 { grid-area: portfolio3; }
+.portfolio3 { grid-area: portfolio3;
 
-.portfolio4 { grid-area: portfolio4; }
+  justify-self: center;
+  align-self: center;
+  width: 70%;
+  height: 50%;}
 
-.portfolio5 { grid-area: portfolio5; }
+.portfolio4 { grid-area: portfolio4;
+
+  justify-self: center;
+  align-self: center;
+  width: 70%;
+  height: 50%;}
+
+.portfolio5 { grid-area: portfolio5;
+
+  justify-self: center;
+  align-self: center;
+  width: 70%;
+  height: 50%;}
 
 .sobreMi { 
   display:grid;
@@ -103,9 +151,15 @@ img{
  }
  .yo{
    grid-area: yo;
+
+   justify-self: center;
+   align-self: center;
+   width: 70%;
+   height: 50%;
  }
  .parrafo{
    grid-area: parrafo;
+
  }
 
 .imprimibles {
@@ -120,21 +174,55 @@ img{
     "impribles4 imprimibles5 imprimibles6";
 }
 
-.imprimibles1 { grid-area: imprimibles1; }
+.imprimibles1 { grid-area: imprimibles1;
+  justify-self: center;
+  align-self: center;
+  width: 70%;
+  height: 50%;
+}
 
-.imprimibles2 { grid-area: imprimibles2; }
+.imprimibles2 { grid-area: imprimibles2;
 
-.imprimibles3 { grid-area: imprimibles3; }
+  justify-self: center;
+  align-self: center;
+  width: 70%;
+  height: 50%;}
 
-.impribles4 { grid-area: impribles4; }
+.imprimibles3 { grid-area: imprimibles3;
 
-.imprimibles5 { grid-area: imprimibles5; }
+  justify-self: center;
+  align-self: center;
+  width: 70%;
+  height: 50%;}
 
-.imprimibles6 { grid-area: imprimibles6; }
+.impribles4 { grid-area: impribles4;
+
+  justify-self: center;
+  align-self: center;
+  width: 70%;
+  height: 50%;}
+
+.imprimibles5 { grid-area: imprimibles5;
+
+  justify-self: center;
+  align-self: center;
+  width: 70%;
+  height: 50%;}
+
+.imprimibles6 { grid-area: imprimibles6;
+
+  justify-self: center;
+  align-self: center;
+  width: 70%;
+  height: 50%;}
 
 .txtImprimibles{
   grid-area: txtImprimibles;
-  text-align: center;
+
+  justify-self: center;
+  align-self: center;
+  width: 70%;
+  height: 50%;
 }
 
 .txtBranding{
