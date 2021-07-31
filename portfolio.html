@@ -1,59 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="\css\styles.css">
+    <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet" href="css\bootstrap.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="Portfolio" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
+
     <header>
-        <div class="imagen">
-            <img src="imagenes\titulo.jpeg" alt="titulo">
+    <div class="container pt-4">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-md">
+                <img src="imagenes/logo.jpeg" alt="Logo">
+            </div>
+            <div class="col-md">
+                <img src="imagenes/socialMedia.jpg" alt="Redes Sociales">
+            </div>
         </div>
-    </header>
-    <nav>
-        <ul>
-            <a href="servicios.html">Servicios</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="sobreMi.html">Sobre Mi</a>
-            <a href="imprimibles.html">Imprimibles</a>
-            <a href="index.html">Inicio</a>
-        </ul>
-    </nav>
-    <main><h1>Sean Bienvenidos al Estudio</h1></main>
-    <section>
-        <div class="portfolio">
-            <div class="tituloport"><h3>Portfolios.dkfjn.sdkfjhg</h3></div>
-            <div class="portfolio1">
-                <img src="imagenes\portfolio1.jpg" alt="portfolio1">
+        <div class="row align-items-center justify-content-center pt-5">
+            <div class="col-md-8">
+                <ul class="nav ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobreMi.html">Sobre Mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="imprimibles.html">Imprimibles</a>
+                    </li>
+                </ul>
             </div>
-            <div class="portfolio2">
-                <img src="imagenes\portfolio2.jpg" alt="portfolio2">
+        </div>
+    </div>
+</header>
+    <section class="portfolio">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-5">
+                    <h2>Portfolio</h2>
+                </div>
             </div>
-            <div class="portfolio3">
-                <img src="imagenes\portfolio3.jpg" alt="portfolio3">
-            </div>
-            <div class="portfolio4">
-                <img src="imagenes\portfolio4.jpg" alt="portfolio4">
-            </div>
-            <div class="portfolio5">
-                <img src="imagenes\portfolio5.jpg" alt="portfolio5">
+            <div class="row align-items-center justify-content-center">
+                <div class="col">
+                    <img src="imagenes/portfolio1.jpg" alt="portfolio 1">
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col">
+                            <img src="imagenes/portfolio2.jpg" alt="portfolio 2">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <img src="imagenes/portfolio3.jpg" alt="portfolio3">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="imagenes/portfolio4.jpg" alt="portfolio 4">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="imagenes/portfolio5.jpg" alt="portfolio 5">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    <section class="servicios">
+    <div class="container pt-3">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-md-5">
+                <h2>Imprimibles</h2>
+            </div>
+        </div>
+        <div class="row align-items-center justify-content-center">
+            <div class="col-md ">
+                <h3>Selecciona alguno de nuestros regalos para descargar</h3>
+            </div>
+        </div>
+        <div class="row align-items-center justify-content-center ">
+            <div class="col-md">
+                <img src="imagenes/imprimibles1.jpg" alt="Recursos imprimibles 1">
+            </div>
+            <div class="col-md">
+                <img src="imagenes/imprimibles2.jpg" alt="Recursos imprimibles 2">
+            </div>
+            <div class="col-md">
+                <img src="imagenes/imprimibles3.jpg" alt="Recursos imprimibles 3">
+            </div>
+        </div>
+        <div class="row pt-3">
+            <div class="col-md">
+                <img src="imagenes/imprimibles4.jpg" alt="Recursos imprimibles 4">
+            </div>
+            <div class="col-md">
+                <img src="imagenes/imprimibles5.jpg" alt="Recursos imprimibles 5">
+            </div>
+            <div class="col-md">
+                <img src="imagenes/imprimibles6.jpg" alt="Recursos imprimibles 6">
+            </div>
+        </div>
+    </div>
+</section>
     <footer>
-        <nav>
-            <ul>
-                <a href="servicios.html">Servicios</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="sobreMi.html">Sobre Mi</a>
-                <a href="imprimibles.html">Imprimibles</a>
-                <a href="index.html">Inicio</a>
-            </ul>
-        </nav>
-    </footer>
+    <div class="container-fluid text-center">
+        <span> Solcartor Design Todos los derechos reservados 2021.</span>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
 
 </body>
 </html>

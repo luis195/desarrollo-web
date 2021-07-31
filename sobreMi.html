@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet" href="css\bootstrap.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,37 +10,113 @@
 </head>
 <body>
     <header>
-        <div class="imagen">
-            <img src="imagenes\titulo.jpeg" alt="titulo">
+    <div class="container pt-4">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-md">
+                <img src="imagenes/logo.jpeg" alt="Logo">
+            </div>
+            <div class="col-md">
+                <img src="imagenes/socialMedia.jpg" alt="Redes Sociales">
+            </div>
         </div>
-    </header>
-    <nav>
-        <ul>
-            <a href="servicios.html">Servicios</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="sobreMi.html">Sobre Mi</a>
-            <a href="imprimibles.html">Imprimibles</a>
-            <a href="index.html">Inicio</a>
-        </ul>
-    </nav>
-    <main><h1>Sean Bienvenidos al Estudio</h1></main>
-    <section>
-        <div class="sobreMi">
-            <h3>Sobre Mi</h3>
-            <div class="yo"><img src="imagenes\sobreMi.jpg" alt="mi Foto"></div>
-            <div class="parrafo"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ea consequuntur tempora, culpa odit id consequatur nihil animi. A, aperiam. Animi necessitatibus voluptatem aperiam nulla maxime minima. Dolorum, necessitatibus labore?</p></div>
+        <div class="row align-items-center justify-content-center pt-5">
+            <div class="col-md-8">
+                <ul class="nav ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobreMi.html">Sobre Mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="imprimibles.html">Imprimibles</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+    <section class="banner">
+    <div class="container pt-5">
+        <div class="row align-items-center">
+            <div class="col-md">
+                <img src="imagenes\ilustracionInicial.jpg" alt="Bienvenida">
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+    <section class="sobreMi">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <main><h1>Sean Bienvenidos al Estudio</h1></main>
+                <div class="col">
+                    <h3>Sobre Mi</h3>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-center">
+                <div class="col">
+                    <img src="imagenes/sobreMi.jpg" alt="Sobre Mi">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Aliquid dolore ducimus ea iure minus odio totam.
+                        Dolor, fuga fugit labore minima nihil optio,
+                        pariatur possimus praesentium quo repellendus sequi veniam?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <h2>Contactanos</h2>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label"
+                        >Direccion de Email </label
+                        >
+                        <input
+                                type="email"
+                                class="form-control"
+                                id="exampleFormControlInput1"
+                                placeholder="nombre@dominio.com"
+                        />
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label"
+                        >Texto</label
+                        >
+                        <textarea
+                                class="form-control"
+                                id="exampleFormControlTextarea1"
+                                rows="3"
+                        ></textarea>
+                    </div>
+                    <button type="button" class="btn btn-outline-secondary">
+                        Enviar
+                    </button>
+                </div>
+                <div class="col-md-5">
+                    <img src="imagenes/contacto.svg" alt="Contact image" />
+                </div>
+            </div>
         </div>
     </section>
     <footer>
-        <nav>
-            <ul>
-                <a href="servicios.html">Servicios</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="sobreMi.html">Sobre Mi</a>
-                <a href="imprimibles.html">Imprimibles</a>
-                <a href="index.html">Inicio</a>
-            </ul>
-        </nav>
+        <div class="container-fluid text-center">
+            <span> Solcartor Design Todos los derechos reservados 2021.</span>
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+            crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>
